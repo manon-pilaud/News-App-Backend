@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 2019_02_18_163028) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "article_categories", force: :cascade do |t|
-    t.integer "category_id"
+  create_table "article_countries", force: :cascade do |t|
+    t.integer "country_id"
     t.integer "article_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -30,9 +30,9 @@ ActiveRecord::Schema.define(version: 2019_02_18_163028) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "categories", force: :cascade do |t|
+  create_table "countries", force: :cascade do |t|
     t.string "name"
-    t.string "type_name"
+    t.string "code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -44,8 +44,8 @@ ActiveRecord::Schema.define(version: 2019_02_18_163028) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "user_categories", force: :cascade do |t|
-    t.integer "category_id"
+  create_table "user_countries", force: :cascade do |t|
+    t.integer "country_id"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

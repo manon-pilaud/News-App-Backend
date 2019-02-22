@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :user_categories
-  resources :categories
-  resources :article_categories
+  resources :user_countries
+  resources :countries
+  resources :article_countries
   resources :reading_lists
   resources :articles
   resources :users

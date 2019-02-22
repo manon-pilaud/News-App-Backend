@@ -1,0 +1,3 @@
+class ArticleCountriesController < ApplicationController
+
+end
