@@ -1,2 +1,0 @@
-class UserCountriesController < ApplicationController
-end

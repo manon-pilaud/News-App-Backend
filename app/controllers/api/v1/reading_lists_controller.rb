@@ -1,4 +1,4 @@
-class ReadingListsController < ApplicationController
+class Api::V1::ReadingListsController < ApplicationController
   def index
     render json: ReadingList.all
   end

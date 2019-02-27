@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create(name:"Mandy")
+User.create(username:"Mandy",password:"helloworld")
 
 Country.create(name:"France",code:"fr",flag:"fr")
 Country.create(name:"Russia", code:"ru",flag:"ru")
@@ -141,7 +141,7 @@ Country.create(name:"Kyrgyzstan",code:"",flag:"kg")
 Country.create(name:"Lebanon",code:"",flag:"lb")
 Country.create(name:"Turkmenistan",code:"",flag:"tm")
 Country.create(name:"Denmark",code:"",flag:"dk")
-Country.create(name:"Finland",code:"fi")
+Country.create(name:"Finland",code:"fi",flag:"fi")
 Country.create(name:"Republic of Congo",code:"",flag:"cg")
 Country.create(name:"Eritrea",code:"",flag:"er")
 Country.create(name:"State of Palestine",code:"",flag:"ps") #EDGE CASE NOT ON MAP
