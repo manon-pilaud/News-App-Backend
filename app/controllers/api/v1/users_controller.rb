@@ -3,12 +3,6 @@ class Api::V1::UsersController < ApplicationController
     render json: User.all
   end
 
-  # def show
-  #   render json: {
-  #     user: User.find(params[:id])
-  #   }
-  # end
-
   def profile
   token = request.headers['Authentication'].split(' ')[1]
   payload = decode(token)

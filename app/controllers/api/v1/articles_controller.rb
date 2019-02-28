@@ -13,7 +13,6 @@ class Api::V1::ArticlesController < ApplicationController
     render json: Article.create(article_params)
   end
 
-
   def update
     Article.find(params[:id]).update(article_params)
     render json: Article.find(params[:id])
