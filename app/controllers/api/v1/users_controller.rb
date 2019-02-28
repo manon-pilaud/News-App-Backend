@@ -16,7 +16,7 @@ end
   def create
     @user = User.create(user_params)
     render json: {
-      user: @user,
+      user: @user.username,
       token: encode({user_id: @user.id})
       }, status: accepted
   end
