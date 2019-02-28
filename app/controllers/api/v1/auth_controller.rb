@@ -6,7 +6,10 @@ class Api::V1::AuthController < ApplicationController
       render json: {
           message: "correct username and password",
           error: false,
-          user: @user.username,
+          userInfo: {
+          user:@user.username,
+          countries: @user.countries,
+          articles: @user.articles},
           token: encode({user_id: @user.id})
         }, status: :accepted
     else
