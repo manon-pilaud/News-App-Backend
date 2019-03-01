@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   get 'auth_controller/create'
   namespace :api do
     namespace :v1 do
-      resources :user_countries
       resources :countries
       resources :article_countries
+      resources :user_countries
       resources :reading_lists
       resources :articles
       resources :users, only: [:create]

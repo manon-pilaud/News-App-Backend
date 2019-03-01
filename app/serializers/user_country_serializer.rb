@@ -1,3 +1,3 @@
 class UserCountrySerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :user_id, :country_id
 end
