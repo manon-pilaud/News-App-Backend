@@ -8,8 +8,12 @@ class Api::V1::AuthController < ApplicationController
           error: false,
           userInfo: {
           user:@user.username,
+          user_id: @user.id,
           countries: @user.countries,
-          articles: @user.articles},
+          articles: @user.articles,
+          user_countries: @user.user_countries,
+          reading_lists: @user.reading_lists
+        },
           token: encode({user_id: @user.id})
         }, status: :accepted
     else
