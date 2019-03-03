@@ -221,6 +221,7 @@ Country.create(name:"Palau",code:"",flag:"pw")
 Country.create(name:"Tuvalu",code:"",flag:"tv")
 Country.create(name:"Nauru",code:"",flag:"nr")
 Country.create(name:"Vatican",code:"",flag:"va")
+Country.create(name:"World News",code:"",flag:"https://ak6.picdn.net/shutterstock/videos/2233546/thumb/1.jpg")
 
 
 UserCountry.create(user_id:1, country_id:1)
