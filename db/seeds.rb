@@ -68,7 +68,7 @@ Country.create(name:"Ukraine",code:'ua',flag:"ua")
 Country.create(name:"South Africa",code:"za",flag:"za")
 
 Country.create(name:"Kenya",code:'',flag:"ke")
-Country.create(name:"Jordan",code:'jo')
+Country.create(name:"Jordan",code:'jo',flag:"jo")
 Country.create(name:"Democratic Republic of the Congo",code:"",flag:"cd")
 Country.create(name:"Iran",code:"",flag:"ir")
 Country.create(name:"Tanzania",code:"",flag:"tz")
