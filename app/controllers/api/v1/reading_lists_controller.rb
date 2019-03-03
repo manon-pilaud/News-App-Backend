@@ -25,6 +25,6 @@ class Api::V1::ReadingListsController < ApplicationController
 
   private
   def reading_list_params
-    params.require(:reading_list).permit(:name)
+    params.require(:reading_list).permit(:user_id, :article_id)
   end
 end
