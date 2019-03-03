@@ -15,17 +15,12 @@ ActiveRecord::Schema.define(version: 2019_02_18_163028) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "article_countries", force: :cascade do |t|
-    t.integer "country_id"
-    t.integer "article_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "articles", force: :cascade do |t|
     t.string "title"
-    t.string "source"
+    t.string "description"
     t.string "article_url"
+    t.string "image_url"
+    t.integer "country_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
