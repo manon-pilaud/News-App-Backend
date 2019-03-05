@@ -10,7 +10,11 @@ class Api::V1::ArticlesController < ApplicationController
   end
 
   def create
-    render json: Article.create(article_params)
+    @article = Article.new(article_params)
+    if @article.valid?
+      @article.save
+      render json: @article
+    end
   end
 
   def update
